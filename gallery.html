@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link rel="stylesheet" href="/style.css">
-    <script src="index.js">
+    <script>
+        function setusername(){
+            document.getElementById("username-p").innerHTML = document.getElementById("username").value + "'s Gallery";
+        }
+        function setprofile(){
+            document.getElementById("ProfileImg").style.backgroundImage = "url(" + document.getElementById("profileimg").value + ")";
+        }       
     </script>
 </head>
 
